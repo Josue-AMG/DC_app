@@ -1,4 +1,4 @@
-import 'package:dc_app/models/voluntario.dart';
+
 import 'package:dc_app/screens/AlberguesScreen.dart';
 import 'package:dc_app/screens/HistoriaScreen.dart';
 import 'package:dc_app/screens/MedidaPreventivaScreen.dart';
