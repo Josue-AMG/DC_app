@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Welcome'),
+        title: Text('DC'),
       ),
       body: _screens[_selectedIndex],
       drawer: Sidebar(), // Agrega el sidebar aquí
