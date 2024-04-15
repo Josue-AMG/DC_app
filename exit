@@ -1,0 +1,94 @@
+[33mcommit d2f697b67f35acb6b5859e1f7c7393e1f52abcc4[m[33m ([m[1;36mHEAD -> [m[1;32mJosue[m[33m, [m[1;31morigin/Dev[m[33m)[m
+Author: Morphy <20209904@itla.edu.do>
+Date:   Wed Apr 10 23:17:54 2024 -0400
+
+    solucion de errore en pubspec lock
+
+[33mcommit e5d67ae50773460861437cebf59820254ccf5f85[m
+Merge: 1501c95 140af16
+Author: Morphy De oleo Martínez <78938079+Morphi007@users.noreply.github.com>
+Date:   Wed Apr 10 22:34:31 2024 -0400
+
+    Merge pull request #5 from Josue-AMG/Morphy
+    
+    *se ha agregado inicio con un slider interativo,*listado de los alber…
+
+[33mcommit 140af16953543fa444fdf41bd1dc558a6de2db0a[m[33m ([m[1;31morigin/Morphy[m[33m)[m
+Merge: 0c8f18e 1501c95
+Author: Morphy De oleo Martínez <78938079+Morphi007@users.noreply.github.com>
+Date:   Wed Apr 10 22:34:25 2024 -0400
+
+    Merge branch 'Dev' into Morphy
+
+[33mcommit 0c8f18eac1e7a63427026d56645cadcac9fbf6c0[m
+Author: Morphy <20209904@itla.edu.do>
+Date:   Wed Apr 10 21:30:32 2024 -0400
+
+    *se ha agregado inicio con un slider interativo,*listado de los albergues *Mapa interativo con la ubicacion de los albergues
+
+[33mcommit 1501c950ff6d789ffb77a9701a4116b8a725a00f[m
+Merge: 632cee8 2cd7c07
+Author: Josue-AMG <113575741+Josue-AMG@users.noreply.github.com>
+Date:   Wed Apr 10 21:24:21 2024 -0400
+
+    Merge pull request #2 from Josue-AMG/Josue
+    
+    pull de Josue
+
+[33mcommit 2cd7c070de7f86bd9698492a97cea9e8e0f9a1ed[m[33m ([m[1;31morigin/Josue[m[33m)[m
+Author: Josue-Alberto <101291362+Josue-Alberto@users.noreply.github.com>
+Date:   Wed Apr 10 00:24:13 2024 -0400
+
+    edicion necesaria
+
+[33mcommit 2c0bca1e57299b24647ab79ec287a9de6cf0f4af[m
+Author: Josue-Alberto <101291362+Josue-Alberto@users.noreply.github.com>
+Date:   Wed Apr 10 00:20:02 2024 -0400
+
+    Parte de Josue, COMPLETADA
+
+[33mcommit 00e8c951f8a19d1a9e0689070556ea0942c7bd30[m
+Merge: fd63091 632cee8
+Author: Josue-Alberto <101291362+Josue-Alberto@users.noreply.github.com>
+Date:   Tue Apr 9 10:06:30 2024 -0400
+
+    cambio en main
+
+[33mcommit fd63091cdd8846916b133f1df1818d1641317807[m
+Author: Josue-Alberto <101291362+Josue-Alberto@users.noreply.github.com>
+Date:   Mon Apr 8 15:57:55 2024 -0400
+
+    no se
+
+[33mcommit 632cee816360f52bbd84f774a37113d64a65f54e[m
+Merge: 25944fa 0e25088
+Author: Morphy De oleo Martínez <78938079+Morphi007@users.noreply.github.com>
+Date:   Mon Apr 8 15:45:50 2024 -0400
+
+    Merge pull request #1 from Josue-AMG/Morphy
+    
+    proyecto base listo para crear funciones
+
+[33mcommit 0e250888800f30aa10a51a0645d57b8fb052436c[m
+Author: Morphy <20209904@itla.edu.do>
+Date:   Mon Apr 8 15:44:43 2024 -0400
+
+    proyecto base listo para crear funciones
+
+[33mcommit 45e0f3b0b8d7ea55f42b43d94e7e6a328748c0d0[m
+Author: Josue-Alberto <101291362+Josue-Alberto@users.noreply.github.com>
+Date:   Sun Apr 7 22:02:56 2024 -0400
+
+    Probando, agregue NO al tapbar
+
+[33mcommit 25944fabeb6a6dfe448ae194623ca5dd73be39dd[m[33m ([m[1;31morigin/Marianny[m[33m, [m[1;32mmain[m[33m)[m
+Author: Josue-Alberto <101291362+Josue-Alberto@users.noreply.github.com>
+Date:   Sun Apr 7 21:45:15 2024 -0400
+
+    version base
+
+[33mcommit 050de5c19a11a9cc492891d1f6ce3c7bda40718e[m
+Author: Josue-Alberto <101291362+Josue-Alberto@users.noreply.github.com>
+Date:   Sun Apr 7 21:41:06 2024 -0400
+
+    first commit

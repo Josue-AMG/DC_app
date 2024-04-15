@@ -38,7 +38,8 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
           .map((item) => Datos(
                 titulo: item['titulo'],
                 fecha: item['fecha'],
-                contenido:  item['contenido']
+                contenido:  item['contenido'],
+                foto: item['foto'],
               ))
           .toList(),
       mensaje: data['mensaje'],
@@ -54,26 +55,50 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.amber[900],
-        title: Text('Noticias'), // Título de la pantalla
-      ),
-      body: Center(
-        child: serviceData.datos!.isEmpty
-            ? CircularProgressIndicator()
-            : ListView.builder(
-                itemCount: serviceData.datos!.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return ListTile(
-                    title: Container(color:Colors.blue[900],child:Text('${serviceData.datos![index].titulo} ${serviceData.datos![index].fecha}',style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),)),
-                    subtitle: Container(color:Colors.amber[900],child:Text(serviceData.datos![index].contenido,style: TextStyle(fontWeight: FontWeight.bold),)),
-                  );
-                },
-              ),
-      ),
-    );
-  }
+  return Scaffold(
+    appBar: AppBar(
+      // Puedes personalizar el color de fondo del appbar aquí
+      backgroundColor: Colors.amber[900],
+      title: Text('Noticias'), // Título de la pantalla
+    ),
+    body: Center(
+      child: serviceData.datos!.isEmpty
+          ? CircularProgressIndicator()
+          : ListView.builder(
+              itemCount: serviceData.datos!.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Card(
+                  // Puedes personalizar el estilo del contenedor Card aquí
+                  child: ListTile(
+                    
+                    title: Column(children: [
+                      Image.network(serviceData.datos![index].foto),
+                      Divider(),
+                      Text( 
+                      serviceData.datos![index].titulo,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        // Puedes personalizar el estilo del texto aquí
+                      ),
+                    ),
+                      Divider(),
+
+                    ],),
+                    subtitle: Text( 
+                      serviceData.datos![index].contenido,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        // Puedes personalizar el estilo del texto aquí
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+    ),
+  );
+}
+
 }
 
 class DcService {
@@ -93,11 +118,13 @@ class Datos {
     String titulo;
     String fecha;
     String contenido;
+    String foto;
 
     Datos({
        required this.titulo,
        required this.fecha,
-       required this.contenido
+       required this.contenido,
+       required this.foto
     });
 
 }

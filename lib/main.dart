@@ -1,3 +1,4 @@
+import 'package:dc_app/screens/acercade.dart';
 import 'package:dc_app/screens/MapaScreen.dart';
 import 'package:dc_app/screens/NoticiaScreen.dart';
 import 'package:dc_app/screens/SplashScreen.dart';
@@ -38,7 +39,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _screens = [
     InicioScreen(),
     NoticiasScreen(),
-    MapaScreen()
+    MapaScreen(),
+
    
   ];
 
@@ -70,6 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.map),
             label: 'Mapas',
           ),
+         
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,

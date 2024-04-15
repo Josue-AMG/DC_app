@@ -22,10 +22,6 @@ class ServiciosScreen extends StatefulWidget {
 class _ServiciosScreenState extends State<ServiciosScreen> {
   
   late DcService serviceData = DcService(exito: false , datos: [], mensaje: '');
-  
-  
-
-  
 
   @override
   void initState() { 
@@ -63,25 +59,47 @@ class _ServiciosScreenState extends State<ServiciosScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.amber[900],
-        title: Text('Servicios'), // Título de la pantalla
-      ),
-      body: Center(
-        child: serviceData.datos!.isEmpty
-            ? CircularProgressIndicator()
-            : ListView.builder(
-                itemCount: serviceData.datos!.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return ListTile(
-                    title: Container(color:Colors.blue[900],child:Text(serviceData.datos![index].nombre,style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),)),
-                    subtitle: Container(color:Colors.amber[900],child:Text(serviceData.datos![index].descripcion,style: TextStyle(fontWeight: FontWeight.bold),)),
-                  );
-                },
-              ),
-      ),
-    );
+  return Scaffold(
+    appBar: AppBar(
+      // Puedes personalizar el color de fondo del appbar aquí
+      backgroundColor: Colors.amber[900],
+      title: Text('Servicios'), // Título de la pantalla
+    ),
+    body: Center(
+      child: serviceData.datos!.isEmpty
+          ? CircularProgressIndicator()
+          : ListView.builder(
+              itemCount: serviceData.datos!.length,
+              itemBuilder: (BuildContext context, int index) {
+                return ListTile(
+                  title: Column(
+                    children: [
+                      Image.network('${serviceData.datos![index].foto}'),
+                      Divider(),
+
+                      Text(
+                      serviceData.datos![index].nombre,
+                      style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      // Puedes personalizar el estilo del texto aquí
+                    ),
+                  ),
+                      Divider(),
+
+                    ]
+                    ),
+                    subtitle: Text(
+                    serviceData.datos![index].descripcion,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      // Puedes personalizar el estilo del texto aquí
+                    ),
+                  ),
+                );
+              },
+            ),
+    ),
+  );
   }
 }
 
