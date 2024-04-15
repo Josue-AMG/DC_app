@@ -1,4 +1,3 @@
-import 'package:dc_app/screens/acercade.dart';
 import 'package:dc_app/screens/MapaScreen.dart';
 import 'package:dc_app/screens/NoticiaScreen.dart';
 import 'package:dc_app/screens/SplashScreen.dart';
