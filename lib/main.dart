@@ -86,22 +86,23 @@ class _HomeScreenState extends State<HomeScreen> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: Text('DC'),
+        backgroundColor: Colors.orange[900],
+        title: Text('Defensa Civil'),
       ),
       body: _screens[_selectedIndex],
       drawer: Sidebar(), // Agrega el sidebar aquí
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home, color: Colors.orange,),
             label: 'Inicio',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.article),
+            icon: Icon(Icons.article, color: Colors.orange,),
             label: 'Noticias',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.map),
+            icon: Icon(Icons.map, color: Colors.orange,),
             label: 'Mapas',
           ),
          
