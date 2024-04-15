@@ -74,6 +74,10 @@ flutter:
       - assets/sliderdc/defensa5.jpeg
       - assets/sliderdc/defensa6.jpg
       - assets/sliderdc/defensa7.jpg
+      - images/jayson.jpg
+      - images/marianny.jpg
+      - images/josue.jpg
+      - images/morphy.jpg
 
   #   - images/a_dot_ham.jpeg
 

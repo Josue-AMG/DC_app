@@ -1,4 +1,5 @@
 
+import 'package:dc_app/screens/acercade.dart';
 import 'package:dc_app/screens/AlberguesScreen.dart';
 import 'package:dc_app/screens/HistoriaScreen.dart';
 import 'package:dc_app/screens/MedidaPreventivaScreen.dart';
@@ -104,7 +105,18 @@ class Sidebar extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => VoluntarioScreen()),
               );
             },
-          )
+          ),
+          ListTile(
+            leading: Icon(FontAwesome.info), // Icono para "Miembros"
+            title: Text('Acerca de'),
+            onTap: () {
+              Navigator.pop(context); // Cierra el sidebar
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AcercadeScreen()),
+              );
+            },
+          )    
           // Puedes agregar más ListTile para más opciones si es necesario
         ],
       ),
