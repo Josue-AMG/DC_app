@@ -69,7 +69,7 @@ class _VoluntarioScreen extends State<VoluntarioScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber[900], // Color de fondo del appbar
+        backgroundColor: Colors.orange[900],// Color de fondo del appbar
         title: const Text('Nuevo Voluntario'), // Título de la pantalla
       ),
       body: Center(

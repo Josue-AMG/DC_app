@@ -19,10 +19,10 @@ class Sidebar extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blue[900],
+              color: Colors.orange[900],
             ),
             child: Text(
-              'Sidebar Header',
+              'Menu Principal',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,
