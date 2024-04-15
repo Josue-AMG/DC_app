@@ -6,7 +6,7 @@ class HistoriaScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Evolución de la Defensa Civil de RD'),
-        backgroundColor: Colors.red, // Color característico de la Defensa Civil
+        backgroundColor: Colors.orange[900], // Color característico de la Defensa Civil
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),

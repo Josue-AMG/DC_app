@@ -27,7 +27,7 @@ class _AlberguesComponentState extends State<AlberguesComponent> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Albergues'),
-        backgroundColor: const Color.fromARGB(255, 90, 93, 92),
+        backgroundColor: Colors.orange[900],
       ),
       body: _albergues == null
           ? Center(
@@ -61,7 +61,7 @@ class _AlberguesComponentState extends State<AlberguesComponent> {
                     ),
                     trailing: Icon(
                       Icons.houseboat_sharp,
-                      color: Color.fromARGB(255, 214, 40, 34),
+                      color: Colors.orange[900],
                     ),
                   ),
                 );

@@ -27,7 +27,7 @@ class _AlberguesComponentMapState extends State<AlberguesComponentMap> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Albergues'),
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.orange[900],
       ),
       body: _albergues == null
           ? Center(
@@ -57,7 +57,7 @@ class _AlberguesComponentMapState extends State<AlberguesComponentMap> {
                   ),
                   trailing: Icon(
                     Icons.directions,
-                    color: Colors.teal ,
+                    color: Colors.orange[900] ,
                   ),
                   onTap: () {
                     Navigator.of(context).pop(albergue);
