@@ -7,6 +7,7 @@ class AcercadeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.orange[900],
         title: Text('Acerca de'),
       ),
       body: SingleChildScrollView(
